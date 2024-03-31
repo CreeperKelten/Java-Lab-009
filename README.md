@@ -16,7 +16,7 @@
     * Is the **blank** object mutable or immutable? How can you tell?
 
 ```text
-PUT ANSWER TO #2 HERE
+"They are Immutable cause X is a primitive Integer"
 ```
 
 ```java
@@ -47,7 +47,7 @@ public class Puzzler {
     * Explain how the return values from #3 and #4 differ.
 
 ```text
-PUT ANSWER TO #5 HERE
+#3 returns a Point object representing a coordinate location, while #4 returns a numerical value representing the distance between two points in space.
 ```
 
 ```java
@@ -87,14 +87,15 @@ Recall that aliases are two variables that refer to the same object.
     * Put the output in the text block below
 
 ```text
-PUT ANSWER TO #2 HERE
+(5, 8)
+(6, 9)
 ```
 
 3. At the end of main, are p1 and p2 aliased? Why or why not?
     * Put your answer in the text block below
 
 ```text
-PUT ANSWER TO #3 HERE
+Point object with the center coordinates of the current state of box1. Therefore, p1 and p2 refer to different Point objects, and there is no aliasing between them.
 ```
 
 ```java
@@ -128,13 +129,13 @@ public class Aliasing {
 The following code fragment traverses a string and checks whether it has the same number of opening and closing parentheses:
 
 ```java
-String s = "((3 + 7) * 2)";
-int count = 0;
-for (int i = 0; i < s.length(); i++) {
-    char c = s.charAt(i);
-    if (c == '(') { count++; }
-    else if (c == ')') { count--; }
-}
+//String s = "((3 + 7) * 2)";
+//int count = 0;
+//for (int i = 0; i < s.length(); i++) {
+  //  char c = s.charAt(i);
+   // if (c == '(') { count++; }
+   // else if (c == ')') { count--; }
+//}
 ```
 
 1. Encapsulate the above fragment in a method in the [StringPlayground](src/StringPlayground.java) class that takes a string argument and returns the final value of count.
